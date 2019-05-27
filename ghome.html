@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>考核系统主页</title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body ondragstart="return false" onload="f()">
+	<div class="top">
+		<img src="image/logo_w.png" alt="logo" id="logo">
+		<img src="image/hua.png" alt="hua" class="hua">
+		<div class="date">
+			<span class="date_font" id="date_year"></span>
+			<img src="image/gang.png" alt="gang">
+			<span class="date_font" id="date_month"></span>
+		</div>
+	</div>
+	<div class="left">
+		<div style="float: right;height: 100%;width: 9%;margin-right: 3%;display: flex;align-items: center;">
+			<img src="image/left.png" alt="left" id="left_ico" class="pointer">
+			<img src="image/right.png" alt="right" id="right_ico" class="pointer" style="display: none;">
+		</div>
+		<div class="contest">
+			<div class="top_contest">
+				<span>信息技术中心</span>
+				<span>游戏部</span>
+				<span>嘿嘿哈</span>
+			</div>
+			<div class="buttom_contest">
+				<div><span id="toFill">填写考核表</span><span id="pointer1" style="display: inline-block;">👈</span></div>
+				<div><span id="toSee">查看考核结果</span><span id="pointer2">👈</span></div>
+				<div><span id="toEva">评估考核</span><span id="pointer4">👈</span></div>
+				<div><span id="toLau">发布考核结果</span><span id="pointer5">👈</span></div>
+				<div><span id="toReg">员工注册</span><span id="pointer6">👈</span></div>
+				<div><span id="toRe">修改密码</span><span id="pointer3">👈</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="main">
+		<div class="board">
+			<form action="" id="fill" style="display: none;">
+				<div class="to_fill">
+					<label for="assessWorkRegular">常规工作</label>
+					<textarea name="assessWorkRegular" id="assessWorkRegular" cols="30" rows="1"></textarea>
+				</div>
+				<div class="to_fill">
+					<label for="assessWorkOutPlan">计划外工作</label>
+					<textarea name="assessWorkOutPlan" id="assessWorkOutPlan" cols="30" rows="1"></textarea>
+				</div>
+				<div class="to_fill">
+					<label for="assessExpanse">其他开支</label>
+					<textarea name="assessExpanse" id="assessExpanse" cols="30" rows="1"></textarea>
+				</div>
+				<div class="to_fill">
+					<label for="assessOther">其他加班</label>
+					<textarea name="assessOther" id="assessOther" cols="30" rows="1"></textarea>
+				</div>
+				<div class="to_fill">
+					<label for="assessPlanSimple">工作计划</label>
+					<textarea name="assessPlanSimple" id="assessPlanSimple" cols="30" rows="1"></textarea>
+				</div>
+				<div class="fill_button">
+					<div class="fill_b">
+						<span style="position: relative;left: 2px;" id="filename">文件上传</span>
+						<input type="file" class="real_file" multiple="true">
+					</div>
+					<input type="submit" class="fill_b">
+				</div>
+			</form>
+			<form id="see" style="display:none;">
+				<div class="head">
+					<div class="dep">
+						<span style="background-color: #bec5de;">&nbsp部门：</span>
+						<div class="to_select">
+							<select name="department" id="department">
+								<option value="" selected="selected">请选择</option>
+								<option value="yanfa">研发部</option>
+								<option value="wangluo">网络部</option>
+								<option value="meigong">美工部</option>
+							</select>
+
+						</div>
+					</div>
+					<div class="time">
+						<span>时间：</span>
+						<span>2018年</span>
+						<select name="department" id="department">
+							<option value="" selected="selected">&nbsp请选择</option>
+							<option value="Jan">&nbsp&nbsp&nbsp&nbsp&nbsp1</option>
+							<option value="Feb">&nbsp&nbsp&nbsp&nbsp&nbsp2</option>
+							<option value="Mar">&nbsp&nbsp&nbsp&nbsp&nbsp3</option>
+							<option value="Apr">&nbsp&nbsp&nbsp&nbsp&nbsp4</option>
+							<option value="May">&nbsp&nbsp&nbsp&nbsp&nbsp5</option>
+							<option value="June">&nbsp&nbsp&nbsp&nbsp&nbsp6</option>
+							<option value="July">&nbsp&nbsp&nbsp&nbsp&nbsp7</option>
+							<option value="Aug">&nbsp&nbsp&nbsp&nbsp&nbsp8</option>
+							<option value="Sep">&nbsp&nbsp&nbsp&nbsp&nbsp9</option>
+							<option value="Oct">&nbsp&nbsp&nbsp&nbsp10</option>
+							<option value="Nov">&nbsp&nbsp&nbsp&nbsp11</option>
+							<option value="Dec">&nbsp&nbsp&nbsp&nbsp12</option>
+						</select>
+						<span>月</span>
+					</div>
+				</div>
+				<div class="foot">
+					<table cellspacing="0" width="100%">
+						<tr style="height: 55px;"><th colspan="4">信息技术中心研发部2018年9月考核结果</th></tr>
+						<tr>
+							<td>姓名</td>
+							<td>积分</td>
+							<td>排名</td>
+							<td>备注</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+					</table>
+				</div>
+			</form>
+			<form id="eva" style="display: none;">
+				<div class="head" id="eva1" style="display:none;">
+					<div class="dep">
+						<span style="background-color: #bec5de;">&nbsp部门：</span>
+						<div class="to_select">
+							<select name="department" id="department">
+								<option value="" selected="selected">请选择</option>
+								<option value="yanfa">研发部</option>
+								<option value="wangluo">网络部</option>
+								<option value="meigong">美工部</option>
+							</select>
+
+						</div>
+					</div>
+					<div class="time">
+						<span>时间：</span>
+						<span>2018年</span>
+						<select name="department" id="department">
+							<option value="" selected="selected">&nbsp请选择</option>
+							<option value="Jan">&nbsp&nbsp&nbsp&nbsp&nbsp1</option>
+							<option value="Feb">&nbsp&nbsp&nbsp&nbsp&nbsp2</option>
+							<option value="Mar">&nbsp&nbsp&nbsp&nbsp&nbsp3</option>
+							<option value="Apr">&nbsp&nbsp&nbsp&nbsp&nbsp4</option>
+							<option value="May">&nbsp&nbsp&nbsp&nbsp&nbsp5</option>
+							<option value="June">&nbsp&nbsp&nbsp&nbsp&nbsp6</option>
+							<option value="July">&nbsp&nbsp&nbsp&nbsp&nbsp7</option>
+							<option value="Aug">&nbsp&nbsp&nbsp&nbsp&nbsp8</option>
+							<option value="Sep">&nbsp&nbsp&nbsp&nbsp&nbsp9</option>
+							<option value="Oct">&nbsp&nbsp&nbsp&nbsp10</option>
+							<option value="Nov">&nbsp&nbsp&nbsp&nbsp11</option>
+							<option value="Dec">&nbsp&nbsp&nbsp&nbsp12</option>
+						</select>
+						<span>月</span>
+					</div>
+				</div>
+				<div class="foot" style="height: 75%;" id="eva2" style="display:none;">
+					<table cellspacing="0" width="100%">
+						<tr style="height: 55px;"><th colspan="4">信息技术中心研发部2018年9月考核结果</th></tr>
+						<tr>
+							<td>姓名</td>
+							<td>职位</td>
+							<td>排名</td>
+							<td>评价</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div class="foot_button" id="eva3" style="display:none;">
+					<input type="submit" name="" value="提交">
+					<input type="reset" name="" value="重填">
+				</div>
+				<div id="lau">
+					<input type="submit" name="" value="发布">
+				</div>
+			</form>
+			<form action="" id="reg">
+				<div class="reg_head">
+					<span style="margin-left: 5%;">注册方式：</span>
+				    <input type="radio" name="method" value="singular" checked="checked">&nbsp个人注册
+					<input type="radio" name="method" value="plural">&nbsp批量注册
+				</div>
+				<div class="singular">
+					<div class="singular_board">
+						<div class="si">
+							<label for="name">姓名</label><input type="text" name="name" id="name" class="singular_input">
+						</div>
+						<div class="si">
+							<label for="userId">学号</label><input type="text" name="userId" id="userId" class="singular_input">
+						</div>
+						<div class="si">
+							<label>部门</label>
+							<input type="radio" name="department" value="yanfa">&nbsp研发部&nbsp&nbsp&nbsp
+							<input type="radio" name="department" value="wangluo">&nbsp网络部&nbsp&nbsp&nbsp
+							<input type="radio" name="department" value="meigong">&nbsp美工部&nbsp&nbsp&nbsp
+						</div>
+						<div class="si">
+							<label for="position">职位</label><input type="text" name="position" id="position" class="singular_input">
+						</div>
+					</div>
+					<div class="foot_button" style="margin-top: 2%;">
+						<input type="submit" name="" value="注册" style="width: 15%;height: 90%;">
+						<input type="reset" name="" value="重填" style="width: 15%;height: 90%;">
+					</div>
+				</div>
+				<div class="plural" style="display: none;">
+					<div style="width:100%;height: 10%;">
+						<div class="seen">
+							<span id="daoru" style="position: relative;">导入本地文件</span>
+							<input type="file" name="" multiple="true">
+						</div>
+					</div>
+					<div class="plural_board">
+						<table cellspacing="0" width="100%">
+							<tr style="height: 55px;"><th colspan="4">员工信息批量注册</th></tr>
+							<tr>
+								<td>姓名</td>
+								<td>学号</td>
+								<td>部门</td>
+								<td>职位</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+						</table>
+					</div>
+					<div class="foot_button" style="margin-top: 1%;">
+						<input type="submit" name="" value="注册" style="width: 15%;height: 90%;">
+						<input type="reset" name="" value="重填" style="width: 15%;height: 90%;">
+					</div>
+				</div>
+			</form>
+			<form action="" id="re" style="display: ;">
+				<div class="re_board">
+					<input type="text" placeholder="请输入原始密码" class="re_input">
+					<input type="text" placeholder="请输入新的密码" class="re_input">
+					<input type="text" placeholder="请再次确认密码" class="re_input">
+					<div class="re_button">
+						<input type="submit" value="确认">
+						<input type="reset" value="取消">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+<script src="js/home.js"></script>
+</html>
